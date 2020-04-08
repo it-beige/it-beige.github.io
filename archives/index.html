@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"beige.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="北歌的个人博客，主要用于学习记录和技术分享">
+  <meta name="description" content="学习记录 &amp; 技术分享">
 <meta property="og:type" content="website">
 <meta property="og:title" content="北歌">
 <meta property="og:url" content="http://beige.world/archives/index.html">
 <meta property="og:site_name" content="北歌">
-<meta property="og:description" content="北歌的个人博客，主要用于学习记录和技术分享">
+<meta property="og:description" content="学习记录 &amp; 技术分享">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Beige">
 <meta property="article:tag" content="北歌">
@@ -77,6 +77,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="北歌" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -118,6 +119,21 @@
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -294,8 +310,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Beige"
+      src="/images/beige.jpg">
   <p class="site-author-name" itemprop="name">Beige</p>
-  <div class="site-description" itemprop="description">北歌的个人博客，主要用于学习记录和技术分享</div>
+  <div class="site-description" itemprop="description">学习记录 & 技术分享</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
